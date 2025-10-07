@@ -6,14 +6,14 @@
 # withdraw
 
 def show_balance(balance):
-  print("********************************")
+  print("**************************")
   print(f"Your balance is ₹{balance:.2f}")
-  print("********************************")
+  print("**************************")
 
 def deposit():
-  print("*************************************************")
+  print("**************************")
   amount = float(input("Enter an amount to be deposited: "))
-  print("*************************************************")
+  print("**************************")
 
   if amount < 0:
     print("**************************")
@@ -25,19 +25,19 @@ def deposit():
 
 
 def withdraw(balance):
-  print("*************************************************")
+  print("**************************")
   amount = float(input("Enter an amount to be withdraw: "))
-  print("*************************************************")
+  print("**************************")
 
   if amount < 0:
-    print("**********************************")
+    print("**************************")
     print("Amount must be greater than zero.")
-    print("**********************************")
+    print("**************************")
     return 0
   elif amount > balance:
-    print("*********************")
+    print("**************************")
     print("Insufficient funds.")
-    print("*********************")
+    print("**************************")
     return 0
   else:
     return amount
@@ -48,18 +48,18 @@ def main():
   is_running = True
 
   while is_running:
-    print("************************")
+    print("**************************")
     print("    Banking Program    ")
-    print("************************")
+    print("**************************")
     print("1. Show Balance")
     print("2. Deposit")
     print("3. Withdraw")
     print("4. Exit")
-    print("************************")
+    print("**************************")
 
-    print("*************************************")
+    print("**************************")
     choice = input("Enter your choice (1 - 4): ")
-    print("*************************************")
+    print("**************************")
 
     match choice:
       case "1":
@@ -71,13 +71,13 @@ def main():
       case "4":
         is_running = False
       case _:
-        print("***********************************************")
+        print("**************************")
         print("Invalid choice. Please choose between (1 - 4)")
-        print("***********************************************")
+        print("**************************")
 
-  print("****************************")
+  print("**************************")
   print("Thank you! Have a nice day.")
-  print("****************************")
+  print("**************************")
 
 if __name__ == "__main__":
   main()
