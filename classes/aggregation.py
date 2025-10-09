@@ -1,6 +1,7 @@
 
 # Aggregation = Represents a relationship where one object(the whole)
 #               contains references to one or more INDEPENDENT objects(the parts).
+#               "has-a" relationship.
 
 class Library:
   def __init__(self, name):
